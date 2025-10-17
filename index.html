@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BookNet Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="vertical-brand">
+    <span>B</span>
+    <span>O</span>
+    <span>O</span>
+    <span>K</span>
+    <span>📖</span>
+    <span>N</span>
+    <span>E</span>
+    <span>T</span>
+  </div>
+  
+  <div class="container">
+    <header class="welcome-banner">
+      <h1>📚 Welcome to the BookNet</h1>
+      <p>Your gateway to knowledge and imagination</p>
+    </header>
+    <!-- Search Section -->
+<section class="search-section">
+  <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="🔍 Search for a book..." required />
+      <button type="submit">Search</button>
+  </form>
+</section>
+
+    <section class="quick-actions" aria-label="Quick actions">
+      <a href="add-book.html" class="card" tabindex="0">➕ Add Book</a>
+      <a href="register-user.html" class="card" tabindex="0">🧑 Register User</a>
+      <a href="borrow-book.html" class="card" tabindex="0">📖 Borrow Book</a>
+      <a href="report-damage.html" class="card" tabindex="0">⚠️ Report Damage</a>
+      <a href="register-staff.html" class="card" tabindex="0">👨‍💼 Register Staff</a>
+    </section>
+
+    <section class="section" aria-label="Newly launched books">
+      <h2>🆕 Newly Launched Books</h2>
+      <div class="book-carousel">
+        <div class="book-card" tabindex="0">📘 Clean Code by Robert C. Martin</div>
+        <div class="book-card" tabindex="0">📗 Atomic Habits by James Clear</div>
+        <div class="book-card" tabindex="0">📕 The Pragmatic Programmer</div>
+        <div class="book-card" tabindex="0">📙 Deep Work by Cal Newport</div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Trending books">
+      <h2>🔥 Trending Books</h2>
+      <div class="book-carousel">
+        <div class="book-card" tabindex="0">📕 1984 by George Orwell</div>
+        <div class="book-card" tabindex="0">📗 Harry Potter Series</div>
+        <div class="book-card" tabindex="0">📘 Sapiens by Yuval Harari</div>
+        <div class="book-card" tabindex="0">📙 Rich Dad Poor Dad</div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Latest articles">
+      <h2>📰 Latest Articles</h2>
+      <div class="articles">
+        <div class="article-card" tabindex="0">
+          <h3>5 Habits of Lifelong Readers</h3>
+          <p>Discover habits that improve reading focus and retention...</p>
+        </div>
+        <div class="article-card" tabindex="0">
+          <h3>How to Make Time for Reading</h3>
+          <p>Tips on balancing reading with your daily routine...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>📚 Library System © 2025. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

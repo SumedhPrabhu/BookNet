@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register Staff</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="add-book.html">➕ Add Book</a>
+      <a href="register-user.html">🧑 Register User</a>
+      <a href="borrow-book.html">📖 Borrow Book</a>
+      <a href="report-damage.html">⚠️ Report Damage</a>
+      <a href="register-staff.html">👨‍💼 Register Staff</a>
+    </nav>
+
+    <header>
+      <h1>Register a New Staff Member</h1>
+    </header>
+
+  <form action="register-staff.php" method="POST" id="registerStaffForm">
+    <input type="text" name="name" placeholder="Full Name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="text" name="role" placeholder="Role (e.g., Librarian)" required><br>
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Register Staff</button>
+</form>
+
+<div id="message"></div>
+
+</body>
+</html>

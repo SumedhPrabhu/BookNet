@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="add-book.html">➕ Add Book</a>
+      <a href="register-user.html">🧑 Register User</a>
+      <a href="borrow-book.html">📖 Borrow Book</a>
+      <a href="report-damage.html">⚠️ Report Damage</a>
+      <a href="register-staff.html">👨‍💼 Register Staff</a>
+    </nav>
+
+    <header>
+      <h1>Add a New Book</h1>
+    </header>
+
+  <form id="addBookForm" action="add-book.php" method="POST" autocomplete="off" novalidate>
+  <div class="form-group">
+    <label for="title">Title <span class="required">*</span></label>
+    <input type="text" id="title" name="title" placeholder="Enter book title" required />
+  </div>
+
+  <div class="form-group">
+    <label for="author">Author <span class="required">*</span></label>
+    <input type="text" id="author" name="author" placeholder="Enter author name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="genre">Genre</label>
+    <input type="text" id="genre" name="genre" placeholder="e.g. Fiction, Programming" />
+  </div>
+
+  <div class="form-group">
+    <label for="publisher">Publisher</label>
+    <input type="text" id="publisher" name="publisher" placeholder="Enter publisher" />
+  </div>
+
+  <div class="form-group">
+    <label for="year">Year Published</label>
+    <input type="number" id="year" name="year" placeholder="e.g. 2021" min="1000" max="2025" />
+  </div>
+
+  <div class="form-group">
+    <label for="copies">Total Copies</label>
+    <input type="number" id="copies" name="copies" placeholder="Enter total copies" min="1" />
+  </div>
+
+  <button type="submit" class="btn-primary">Add Book</button>
+</form>
+
+<div id="message"></div>
+
+
+    <footer>
+      <p>📚 Library System © 2025. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

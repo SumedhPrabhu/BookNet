@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register User</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="add-book.html">➕ Add Book</a>
+      <a href="register-user.html">🧑 Register User</a>
+      <a href="borrow-book.html">📖 Borrow Book</a>
+      <a href="report-damage.html">⚠️ Report Damage</a>
+      <a href="register-staff.html">👨‍💼 Register Staff</a>
+    </nav>
+
+    <header>
+      <h1>Register a New User</h1>
+    </header>
+
+  <form action="register-user.php" method="POST" id="registerUserForm">
+    <input type="text" placeholder="Full Name" name="name" required><br>
+    <input type="email" placeholder="Email" name="email" required><br>
+    <input type="text" placeholder="Phone Number" name="phone"><br>
+    <button type="submit">Register User</button>
+</form>
+
+<div id="message"></div>
+
+</body>
+</html>

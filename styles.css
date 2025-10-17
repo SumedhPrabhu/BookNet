@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Literata:opsz,wght@7..72,400;7..72,700&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Literata', serif;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('your-books-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: 
+      linear-gradient(rgba(20,20,30,0.7), rgba(20,20,30,0.85)),
+      url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #eee;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1080px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  header.welcome-banner {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    user-select: none;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    color: #f1f1f1;
+    user-select: none;
+  }
+  
+  p {
+    user-select: none;
+  }
+  
+  /* Navigation Bar for subpages */
+  .nav-bar {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    user-select: none;
+  }
+  
+  .nav-bar a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .nav-bar a:hover,
+  .nav-bar a:focus {
+    background: rgba(255,255,255,0.3);
+    outline: none;
+  }
+  
+  /* Cards for homepage quick actions */
+  .quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 1.8rem;
+    margin-bottom: 3rem;
+    user-select: none;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    color: #eee;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card:hover,
+  .card:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    transform: scale(1.2);
+    z-index: 10;
+    position: relative;
+  }
+  
+  /* Book carousel section */
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .book-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    user-select: none;
+  }
+  
+  .book-card {
+    min-width: 180px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  }
+  
+  .book-card:hover,
+  .book-card:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    transform: scale(1.1);
+  }
+  
+  /* Articles */
+  .articles {
+    margin-top: 2rem;
+  }
+  
+  .article {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    user-select: none;
+    transition: background 0.2s ease;
+  }
+  
+  .article:hover {
+    background: rgba(255,255,255,0.2);
+  }
+  
+  /* Forms */
+  form {
+    background: rgba(20,20,30,0.85);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    max-width: 480px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1.6rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: #ddd;
+    user-select: none;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: inset 0 0 10px rgb(255 255 255 / 0.15);
+    transition: background 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    background: rgba(255,255,255,0.3);
+    outline: none;
+  }
+  
+  /* Buttons */
+  button.btn-primary {
+    background: #1976d2;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.9rem 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    user-select: none;
+    transition: background 0.3s ease;
+  }
+  
+  button.btn-primary:hover,
+  button.btn-primary:focus {
+    background: #145ea8;
+    outline: none;
+  }
+  
+  /* Messages */
+  #message {
+    max-width: 480px;
+    margin: 0 auto 2rem auto;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+    user-select: none;
+  }
+  
+  /* Required star */
+  .required {
+    color: #ff6666;
+  }
+
+
+
+
+
+  /* --- Notebook Glassy Form Style with Ruled Lines --- */
+form {
+    max-width: 480px;
+    margin: 3rem auto 5rem;
+    padding: 3rem 2.5rem 3.5rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255 255 255 / 0.18) 0%,
+      rgba(255 255 255 / 0.12) 40%,
+      rgba(255 255 255 / 0.09) 100%
+    );
+    border-radius: 20px;
+    box-shadow:
+      0 10px 40px rgba(0, 0, 0, 0.15),
+      inset 0 0 25px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e2a1e;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+  }
+  
+  /* Ruled lines using repeating linear gradient */
+  form::before {
+    content: "";
+    position: absolute;
+    top: 1.6rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    bottom: 3rem;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 22px,
+      rgba(150, 150, 150, 0.15) 23px
+    );
+    border-radius: 20px;
+    z-index: 0;
+  }
+  
+  /* Make inputs stand out with subtle glassy background */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="date"],
+  form textarea {
+    position: relative;
+    width: 100%;
+    padding: 14px 18px;
+    margin: 1.2rem 0 1.8rem 0;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255 255 255 / 0.6);
+    box-shadow:
+      inset 0 2px 5px rgba(255 255 255, 0.8),
+      0 1px 6px rgba(0 0 0 / 0.1);
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+    color: #3a3629;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    resize: vertical;
+  }
+  
+  /* Focus effect with subtle glow and deeper background */
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="number"]:focus,
+  form input[type="password"]:focus,
+  form input[type="date"]:focus,
+  form textarea:focus {
+    background: rgba(255 255 255 / 0.8);
+    box-shadow:
+      0 0 10px 3px rgba(163, 151, 95, 0.6),
+      inset 0 2px 8px rgba(255 255 255, 0.95);
+    outline: none;
+    color: #2f2b18;
+  }
+  
+  /* Textarea special style: italic, slightly bigger line height */
+  form textarea {
+    font-style: italic;
+    line-height: 1.6;
+    min-height: 110px;
+    padding-top: 16px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Submit button with gradient, shadow, and glassy look */
+  form button {
+    width: 100%;
+    padding: 16px 0;
+    background: linear-gradient(145deg, #a68c44, #d2c87c);
+    border: none;
+    border-radius: 16px;
+    font-family: 'Georgia', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3e311a;
+    box-shadow: 0 8px 18px #9a854533;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    margin-top: 1.2rem;
+    z-index: 2;
+  }
+  
+  form button:hover,
+  form button:focus {
+    background: linear-gradient(145deg, #d2c87c, #a68c44);
+    box-shadow: 0 10px 30px #9a854555;
+    color: #382e13;
+    outline: none;
+  }
+  
+  /* Labels: warm and elegant */
+  form label {
+    font-weight: 600;
+    color: #5a5137;
+    font-family: 'Georgia', serif;
+    margin-bottom: 0.25rem;
+    display: block;
+    user-select: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 520px) {
+    form {
+      margin: 2rem 1rem 3rem;
+      padding: 2.5rem 2rem 3rem;
+    }
+  }
+
+  
+  /* Restore nav and icon font size outside forms */
+nav a {
+    font-size: 1.15rem;  /* or your original size */
+    color: white;
+    text-decoration: none;
+    margin-right: 1.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #d2c87c;
+  }
+  
+  /* Ensure icons inside nav remain large and visible */
+  nav a::before {
+    font-size: 1.4rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+  }
+  
+  /* Inputs inside forms - improved contrast and size */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="date"],
+  form textarea {
+    color: #2f2b18;  /* dark earthy text */
+    font-size: 1.1rem; /* slightly bigger for visibility */
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    caret-color: #a68c44; /* nice golden caret */
+  }
+  
+  /* Placeholder color - lighter but visible */
+  form input::placeholder,
+  form textarea::placeholder {
+    color: rgba(47, 43, 24, 0.65);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  /* Labels remain warm & visible */
+  form label {
+    color: #5a5137;
+    font-size: 1rem;
+  }
+  
+  /* Button text visibility */
+  form button {
+    color: #3e311a;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+  }
+  
+  /* Keep the glass effect on form and inputs */
+  /* No change needed here; already glassy */
+  
+  /* Optional: add subtle shadow to nav links for better visibility */
+  nav a {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  }
+
+  
+
+  /* FORM CONTAINER */
+form {
+    background: rgba(255, 255, 255, 0.1); /* more contrasty glass */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* FORM INPUTS */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="date"],
+  form textarea {
+    background: rgba(255, 255, 255, 0.35); /* lighter but clearer */
+    color: #000; /* fully visible text */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 16px;
+    margin: 12px 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border: 1px solid #ffd700;
+    background: rgba(255, 255, 255, 0.45);
+  }
+  
+  /* PLACEHOLDERS */
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #222;
+    font-weight: 400;
+    opacity: 0.7;
+  }
+  
+  /* FORM LABELS */
+  form label {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  /* FORM BUTTON */
+  form button {
+    background: linear-gradient(to right, #ffda77, #f6c90e);
+    color: #222;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background: linear-gradient(to right, #f6c90e, #ffda77);
+    transform: scale(1.05);
+  }
+  
+
+
+  .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#searchForm {
+    display: flex;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px 0 0 50px;
+    width: 300px;
+    background: transparent;
+    color: #fff;
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#searchForm button {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#searchForm button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+.vertical-brand {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 38px; /* Keep stylish size */
+    letter-spacing: 4px;
+    z-index: 1000;
+    padding: 30px 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0 16px 16px 0;
+    height: 95vh; /* Make it stretch vertically */
+    justify-content: space-evenly; /* Spaced evenly from top to bottom */
+  }
+  
+
+  .vertical-brand span {
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* required for transform to work nicely */
+  }
+  
+  .vertical-brand span:hover {
+    transform: translateX(8px) scale(1.2); /* shift right and scale up */
+    color: #f8d26b;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  
+

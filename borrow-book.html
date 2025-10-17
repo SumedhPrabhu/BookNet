@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Borrow Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <a href="index.html">🏠 Home</a>
+      <a href="add-book.html">➕ Add Book</a>
+      <a href="register-user.html">🧑 Register User</a>
+      <a href="borrow-book.html">📖 Borrow Book</a>
+      <a href="report-damage.html">⚠️ Report Damage</a>
+      <a href="register-staff.html">👨‍💼 Register Staff</a>
+    </nav>
+
+    <header>
+      <h1>Borrow a Book</h1>
+    </header>
+
+  <form id="borrowBookForm" action="borrow-book.php" method="POST">
+    <input type="number" placeholder="Book ID" name="book_id" required><br>
+    <input type="number" placeholder="User ID" name="user_id" required><br>
+    <label>Due Date:</label><br>
+    <input type="date" name="due_date" required><br>
+    <button type="submit">Borrow Book</button>
+</form>
+
+<div id="message"></div>
+
+
+</body>
+</html>
