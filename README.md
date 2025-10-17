@@ -26,9 +26,8 @@ It is built using **PHP**, **MySQL**, **HTML**, **CSS**, and **JavaScript**, and
 ---
 
 ## ⚙️ How to Run Locally
+
 **Install [XAMPP](https://www.apachefriends.org/download.html)**  
    It includes Apache (server) and MySQL.
 
 
-1. **Install [XAMPP](https://www.apachefriends.org/download.html)**  
-   It includes Apache (server) and MySQL.
